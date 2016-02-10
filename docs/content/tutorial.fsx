@@ -96,6 +96,13 @@ But don't think this is the only way to use fszmq! Go look at the other [samples
 to see examples of asynchronous client\server, publish\subscribe, map\reduce, and many other distributed computing patterns.
 And, most of all, have fun using F# ("Simple code for complex problems") and ZeroMQ ("Distributed computing made simple")!
 
+A quick note on installing ZeroMQ on OS X; this package will automatically find libzmq.so, libzmq.dylib and libzmq.dll
+as long as you have it installed on your system. You can do so by running
+
+``` bash
+brew reinstall zeromq --universal --with-libpgm --with-libsodium
+```
+
   [content]: https://github.com/zeromq/fszmq/tree/master/docs/content
   [zguide]: http://zguide.zeromq.org/page:all
 *)
